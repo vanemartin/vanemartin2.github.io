@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <title>Contacto</title>
+
+    <style>
+      body {
+        font-family: 'Crimson Pro', serif;
+        font-size: 20px;
+      }
+    </style>
+
+</head>
+<body>
+
+ <!--Head-->
+ <div class="head">
+  <!--Logo-->
+  <div class="logo"><a href="index.html"><img src="lo1.PNG" width="250px" height="54px"> 
+  </div>
+<!--Barra de Navegación-->
+  <div class="navbar">
+    <a href="index.html">Inicio</a>
+    <a href="Nosotros.html">Nosotros</a>
+    <a href="Contacto.html">Contacto</a>
+    <a href="Servicios.html">Servicios</a>
+    <a href="Precios.html">Precios</a>
+  </div>
+</div>
+
+  
+<header class="content header">
+  <h2 class="title">Contactanos</h2>
+  
+      <form id="form" action="" class="form">
+          <h4 class="tag"><span>HABLEMOS SOBRE TU PROXIMO VIAJE</span></h4>
+          <div>
+          <label for="name">Nombre Completo <span>*</span></label>
+          <input name="name" required type="text" id="name" placeholder="Juan">
+          <label for="email">Correo electrónico <span>*</span></label>
+          <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+          <button type="submit" class="btn primary full">enviar mensaje</button>
+        </form>
+        <a href="mailto:me@vaneliria53.com" id="truc"></a>
+      </div> 
+    </div>
+    </div>
+  </section>
+  
+  <script>
+    const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#t')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+      event.preventDefault()
+      const form = new FormData(this)
+    $buttonMailto.setAttribute('href', `mailto:loremipsu.com?subject=nombre ${form.get('name')}  
+    correo ${form.get('email')}&body=${form.get('message')}`)
+      $buttonMailto.click()
+    }
+  </script><br><br>
+  Hecho con <div class="corazon"> &#x2665;</div> del equipo Mundo Travel 
+  <br><br><br>
+  <p class="footer-copyright">
+  Copyright 2022 - Todos los derechos reservados.
+  </p>
+
+</body>
+</html>
+  
+
+  

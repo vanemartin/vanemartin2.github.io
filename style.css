@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+.logo {
+    width:22%;
+    height: 50px;
+    background: #000000;
+    float: left;
+    padding-top: 2px;
+    box-sizing: border-box;
+}
+
+.logo p a {
+    
+    color: #fff;
+    font-size: 22px;
+} 
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: navy;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #14f371;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider {
+  position: relative;
+  width: 800px;
+  height: 300px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+
+ul.slider li img {
+  width: 165%;
+  height: 300px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1; 
+}
+
+.menu {
+  text-align: center;
+  margin: 10px;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color:black;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 2px 10px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+}
+
+
+.btn-home {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 20px;
+    border: 2px solid #9c27b0;
+    color: #fff;
+    text-decoration: none;
+    background: #9c27b0;
+}
+
+.btn:hover {
+    background: none;
+    
+}
+
+
+.content {
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    
+    justify-content: center;
+    align-items: center;
+}
+.sau{
+    margin-top: 10px;
+}
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;   
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    background: #9c27b0;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: #9c27b0;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+element.style {
+    width: 773px;
+    margin-right: 10px;
+} 
+
+.social-item {
+    background: var(--primary);
+    display: inline-block;
+    inline-size: 44px;
+    block-size: 44px;
+    text-align: center;
+    line-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    border: 2px solid var(--black);
+  }
+  
+  .social-item + .social-item {
+    margin-left: 1em;
+  }
+  
+  .social-item img {
+    vertical-align: middle;
+  }
+
+.contact {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.banner-info {
+    margin-top: 2%;
+    align-items: center;
+}
+
+.banner-pub {
+    margin-top: 2%;
+    align-content: center;
+}
+
+
+.footer-copyright {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+
+.corazon {
+	display: inline-block;
+	font-size: 30px;
+	color: red;
+	animation: latidos .5s infinite;
+	transform-origin: center;
+    
+}
+
+
+
