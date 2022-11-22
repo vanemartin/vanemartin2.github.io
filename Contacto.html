@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +20,7 @@
  <!--Head-->
  <div class="head">
   <!--Logo-->
-  <div class="logo"><a href="index.html"><img src="lo1.PNG" width="250px" height="54px"> 
+  <div class="logo"><a href="index.html"><img src="img/lo1.PNG" width="250px" height="54px"> 
   </div>
 <!--Barra de Navegación-->
   <div class="navbar">
@@ -33,44 +34,57 @@
 
   
 <header class="content header">
-  <h2 class="title">Contactanos</h2>
   
-      <form id="form" action="" class="form">
-          <h4 class="tag"><span>HABLEMOS SOBRE TU PROXIMO VIAJE</span></h4>
-          <div>
-          <label for="name">Nombre Completo <span>*</span></label>
-          <input name="name" required type="text" id="name" placeholder="Juan">
-          <label for="email">Correo electrónico <span>*</span></label>
-          <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
-          <button type="submit" class="btn primary full">enviar mensaje</button>
-        </form>
-        <a href="mailto:me@vaneliria53.com" id="truc"></a>
-      </div> 
-    </div>
-    </div>
-  </section>
+     
+  <section class="contact">
+    <div class="u-wrapper">
+      <div class="contact-content">
+        <br> <br> <br>
+
+
+              <form id="form"   action="https://formspree.io/f/xzbwwooa"
+              method="POST" class="form">
+                <h3 class="tag"><span>HABLEMOS</span></h3> <br>
+                <label for="name">Nombre Completo <span>*</span></label>
+                <input name="name" required type="text" id="name" placeholder="Juan">
+                <label for="email">Correo electrónico <span>*</span></label>
+                <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="btn primary full">enviar mensaje</button>
+              </form>
+              <a href="mailto:me@leonidasesteban.com" id="trucazo"></a>
+            </div>
+          </div>
+        </section>
   
-  <script>
-    const $form = document.querySelector('#form')
-    const $buttonMailto = document.querySelector('#t')
-
-    $form.addEventListener('submit', handleSubmit)
-
-    function handleSubmit(event) {
-      event.preventDefault()
-      const form = new FormData(this)
-    $buttonMailto.setAttribute('href', `mailto:loremipsu.com?subject=nombre ${form.get('name')}  
-    correo ${form.get('email')}&body=${form.get('message')}`)
-      $buttonMailto.click()
-    }
-  </script><br><br>
   Hecho con <div class="corazon"> &#x2665;</div> del equipo Mundo Travel 
   <br><br><br>
   <p class="footer-copyright">
   Copyright 2022 - Todos los derechos reservados.
   </p>
+
+  <script>
+  const $form = document.querySelector('#form')
+$form.addEventListener('submit', handlesubmit)
+
+async function handlesubmit(event) {
+  event.preventDefault()
+  const form = new FormData(this)
+  const response = await fetch(this.action,{
+   method: this.method,
+   body:form,
+   headers: {
+    'Accept': 'aplication/json'
+   
+  }
+  })
+  if (response.ok) {
+    this.reset()
+    alert('Gracias por contactarnos, en breve te responderemos')
+  }
+}
+ </script>
 
 </body>
 </html>

@@ -153,11 +153,11 @@ p {
 }
 
 
-.btn-home {
+.btn-home .btn{
     display: inline-block;
     margin-top: 15px;
-    padding: 5px 20px;
-    border: 2px solid #9c27b0;
+    padding: 5px 5px;
+    border: 0px solid #9c27b0;
     color: #fff;
     text-decoration: none;
     background: #9c27b0;
@@ -230,27 +230,6 @@ element.style {
     margin-right: 10px;
 } 
 
-.social-item {
-    background: var(--primary);
-    display: inline-block;
-    inline-size: 44px;
-    block-size: 44px;
-    text-align: center;
-    line-height: 44px;
-    display: inline-flex;
-    align-items: center;
-    border-radius: 4px;
-    justify-content: center;
-    border: 2px solid var(--black);
-  }
-  
-  .social-item + .social-item {
-    margin-left: 1em;
-  }
-  
-  .social-item img {
-    vertical-align: middle;
-  }
 
 .contact {
     padding-top: 20px;
@@ -289,6 +268,48 @@ element.style {
 	transform-origin: center;
     
 }
+
+/*MEDIA QUERIES*/
+/*tablets*/
+@media (max-widht: 1024px){
+    
+}
+ 
+
+/*smartphones*/
+
+@media (max-widht: 360px){
+
+}
+
+
+
+header {
+    flex-direction: column;
+    height: 60px;
+    overflow: hidden;
+    transition: all 0.8s;
+}
+
+header > div {
+    width: 100%;
+}
+
+content-sau
+
+nav{
+    justify-content: center;
+}
+
+nav > ul {
+    margin: 0;
+}
+nav > ul > li{
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+
 
 
 
