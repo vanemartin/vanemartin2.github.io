@@ -72,17 +72,10 @@ body {
     justify-content: space-between;
     align-items: center;
   }
-
-  .tag span {
-    padding: .5em;
-    background: var(--black);
-    color: var(--primary);
-    box-shadow: -4px 5px 0 white;
-  }
-
-  .h3 {
-    font-size: 48px;
+ .tag span {
+    font-size: 38px;
     line-height: 77px;
+    color: #fff;
   }
 
   .btn {
@@ -104,7 +97,7 @@ body {
     padding: 4 1.5em;
     border: 2px solid #9c27b0;
     color: black;
-    background: #9c27b0;
+    background: #e5c7eb;
     }
 
 .btn.full {
@@ -165,32 +158,11 @@ body {
       padding-bottom: 0;
       }
       
-      .footer-copyright {
-        justify-content: center;
-        align-items: center;
-      }
-      .footer {
-        text-align: center;
-      }
-      
       #trucazo {
         opacity: 0;
       }
       
-      @keyframes latidos {
-        from { transform: none; }
-        50% { transform: scale(1.4); }
-        to { transform: none; }
-      }
-      
-      .corazon {
-      display: inline-block;
-      font-size: 30px;
-      color: red;
-      animation: latidos .5s infinite;
-      transform-origin: center;
-        
-      }
+  
 
 /*MEDIA QUERIES*/
 /*tablets*/
